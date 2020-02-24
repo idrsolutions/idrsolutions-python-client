@@ -1,0 +1,9 @@
+# Automatically detect & normalise text files that aren't already specified below
+* text=auto
+
+# Normalise line endings on checkin (set "text" attribute)
+*.in text
+*.cfg text
+*.rst text
+*.md text
+*.py text
