@@ -1,1 +1,1 @@
-from IDRSolutions.IDRClient import IDRClient
+from IDRSolutions.IDRCloudClient import IDRCloudClient

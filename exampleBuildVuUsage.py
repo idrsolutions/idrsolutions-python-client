@@ -1,21 +1,21 @@
-from IDRSolutions import IDRClient
+from IDRSolutions import IDRCloudClient
 
-client = IDRClient('http://localhost:8080/' + IDRClient.BUILDVU)
+client = IDRCloudClient('http://localhost:8080/' + IDRCloudClient.BUILDVU)
 try:
     # Upload a local file to he specified microservice
     # convert() returns an dictionary with the conversion results.
-    conversionResults = client.convert(input=IDRClient.UPLOAD, file='path/to/file.pdf')
+    conversionResults = client.convert(input=IDRCloudClient.UPLOAD, file='path/to/file.pdf')
 
     # You can specify other parameters for the API as named parameters, for example
     # here is the use of the callbackUrl parameter which is a URL that you want to 
     # be updated when the conversion finishes. 
     # See https://github.com/idrsolutions/buildvu-microservice-example/blob/master/API.md
-    # conversionResults = client.convert(input=IDRClient.UPLOAD,
+    # conversionResults = client.convert(input=IDRCloudClient.UPLOAD,
     #                            callbackUrl='http://listener.url')
 
     # Alternatively, you can specify a url from which the server will download the file to convert.
     # conversionResults = client.convert(url='http://link.to/filename',
-    #                            input=IDRClient.DOWNLOAD)
+    #                            input=IDRCloudClient.DOWNLOAD)
 
     outputURL = conversionResults['downloadUrl']
 

@@ -20,7 +20,7 @@ Using PIP:
 
 ::
 
-    pip install IDRClient
+    pip install IDRCloudClient
 
 For other methods / ways to install, check out the `Python Docs`_.
 
@@ -32,13 +32,13 @@ Usage
 Basic:
 ~~~~~~
 
-First, import IDRClient and setup the converter details by creating a new
-``IDRClient`` object :
+First, import IDRCloudClient and setup the converter details by creating a new
+``IDRCloudClient`` object :
 
 ::
 
-    from IDRSolutions import IDRClient
-    client = IDRClient('http://localhost:8080/' + IDRClient.BUILDVU)
+    from IDRSolutions import IDRCloudClient
+    client = IDRCloudClient('http://localhost:8080/' + IDRCloudClient.BUILDVU)
 
 You can now convert files by calling the methods available. ``convert()`` will 
 start the conversion process. For example to convert to html5 : 
@@ -46,7 +46,7 @@ start the conversion process. For example to convert to html5 :
 ::
 
     # Convert the file with the input method specified
-    results = client.convert(input=IDRClient.UPLOAD, file='path/to/file.pdf')
+    results = client.convert(input=IDRCloudClient.UPLOAD, file='path/to/file.pdf')
 
     # Return a URL where you can view the converted output.
     print(results['downloadUrl'])
@@ -57,7 +57,7 @@ file to convert.
 ::
 
     # Convert the file with the input method specified
-    results = client.convert(input=IDRClient.DOWNLOAD, url="http://link.to/filename")
+    results = client.convert(input=IDRCloudClient.DOWNLOAD, url="http://link.to/filename")
 
     # Return a URL where you can download the converted output.
     print(results['downloadUrl'])
@@ -81,8 +81,8 @@ Changes for docker version
 If your BuildVu service requires authentication, you can set the username and password by passing an additional tuple argument as shown below:
 ::
 
-    from IDRSolutions import IDRClient
-    client = IDRClient('http://localhost:8080/' + IDRClient.BUILDVU, auth=("username","password"))
+    from IDRSolutions import IDRCloudClient
+    client = IDRCloudClient('http://localhost:8080/' + IDRCloudClient.BUILDVU, auth=("username","password"))
 
 
 --------------

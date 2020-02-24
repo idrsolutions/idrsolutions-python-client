@@ -27,7 +27,7 @@ except ImportError:
     raise Exception("Missing dependency: 'requests'. Install it using 'pip install requests'.")
 
 
-class IDRClient:
+class IDRCloudClient:
 
     JPEDAL = "jpedal"
     BUILDVU = "buildvu"

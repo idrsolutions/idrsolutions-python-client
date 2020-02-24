@@ -22,7 +22,7 @@ Using PIP:
 
 ::
 
-    pip install IDRClient
+    pip install IDRCloudClient
 
 For other methods / ways to install, check out the `Python Docs`_.
 
