@@ -137,9 +137,9 @@ class IDRCloudClient:
             r2 = requests.post(self.endpoint, files=files, data=params, timeout=self.request_timeout, auth=self.auth)
             r2.raise_for_status()
         except requests.exceptions.RequestException as error:
-            # if r2 is not None:
-            #     raise Exception(self.__get_returned_error_message(error, r2))
-            # else:
+            if 'r2' in vars() and r2 is not None:
+                raise Exception(self.__get_returned_error_message(error, r2))
+            else:
                 raise Exception(error)
 
         response = json.loads(r2.text)
@@ -172,7 +172,7 @@ class IDRCloudClient:
             req = requests.get(self.endpoint, params={'uuid': uuid}, timeout=self.request_timeout, auth=self.auth)
             req.raise_for_status()
         except requests.exceptions.RequestException as error:
-            if req is not None:
+            if 'req' in vars() and req is not None:
                 raise Exception(self.__get_returned_error_message(error, req))
             else:
                 raise Exception(error)
@@ -186,7 +186,7 @@ class IDRCloudClient:
             r1 = requests.get(download_url, timeout=self.request_timeout, auth=self.auth)
             r1.raise_for_status()
         except requests.exceptions.RequestException as error:
-            if r1 is not None:
+            if 'r1' in vars() and r1 is not None:
                 raise Exception(self.__get_returned_error_message(error, r1))
             else:
                 raise Exception(error)
