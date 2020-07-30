@@ -18,7 +18,7 @@ def get_readme():
 
 setup(
     name='IDRCloudClient',
-    version='4.1.4',
+    version='4.1.5',
     description="Python API for IDRSolutions' Microservice Examples",
     long_description=get_readme(),
     url='https://github.com/idrsolutions/IDRSolutions-python-client',
