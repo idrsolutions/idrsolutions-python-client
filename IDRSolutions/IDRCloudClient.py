@@ -91,8 +91,7 @@ class IDRCloudClient:
                 break
 
             if response['state'] == 'error':
-                raise Exception('The server ran into an error converting file, see server logs for '
-                                'details.')
+                raise Exception('Failed: Error with conversion: ' + r3.text)
             if params.get('callbackUrl') is not None:
                 break
 
@@ -155,7 +154,7 @@ class IDRCloudClient:
         # Create a meaningful error message from servers response
         # Returns string
         error_message = str(error)
-        if response.status_code is not 200:
+        if response.status_code != 200:
             content = response.text
             if content is not None:
                 if "application/json" in response.headers['Content-Type']:
