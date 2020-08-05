@@ -13,7 +13,7 @@ here = path.abspath(path.dirname(__file__))
 
 # With a little witchcraft, we can use README.rst as long description for PyPI
 def get_readme():
-    with open('README.rst', encoding='UTF-8') as readme:
+    with open('README.md', encoding='UTF-8') as readme:
         return readme.read()
 
 setup(
@@ -21,6 +21,7 @@ setup(
     version='4.1.5',
     description="Python API for IDRSolutions' Microservice Examples",
     long_description=get_readme(),
+    long_description_content_type='text/markdown',
     url='https://github.com/idrsolutions/IDRSolutions-python-client',
     author='IDRSolutions',
     author_email='support@idrsolutions.zendesk.com',
