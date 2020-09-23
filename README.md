@@ -26,11 +26,11 @@ For other methods / ways to install, check out the [Python Docs](https://packagi
 
 ## BuildVu #
 
-Full usage for connecting to [BuildVu can be found here](README-BUILDVU.md).
+Full usage for connecting to [BuildVu can be found here](https://docs.idrsolutions.com/buildvu/).
 
 ## JPedal #
 
-Full usage for connecting to [JPedal can be found here](README-JPEDAL.md).
+Full usage for connecting to [JPedal can be found here](https://docs.idrsolutions.com/jpedal/).
 
 -----
 
@@ -38,7 +38,7 @@ Full usage for connecting to [JPedal can be found here](README-JPEDAL.md).
 
 Found a bug, or have a suggestion / improvement? Let us know through the Issues page.
 
-Got questions? You can contact us [here](https://idrsolutions.zendesk.com/hc/en-us/requests/new).
+Got questions? You can contact us [here](https://idrsolutions.atlassian.net/servicedesk/customer/portal/8).
 
 -----
 
