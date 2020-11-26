@@ -26,11 +26,11 @@ For other methods / ways to install, check out the [Python Docs](https://packagi
 
 ## BuildVu #
 
-Full usage for connecting to [BuildVu can be found here](https://docs.idrsolutions.com/buildvu/).
+Full usage for connecting to [BuildVu can be found here](https://support.idrsolutions.com/buildvu/tutorials/cloud/).
 
 ## JPedal #
 
-Full usage for connecting to [JPedal can be found here](https://docs.idrsolutions.com/jpedal/).
+Full usage for connecting to [JPedal can be found here](https://support.idrsolutions.com/jpedal/tutorials/cloud/).
 
 -----
 
