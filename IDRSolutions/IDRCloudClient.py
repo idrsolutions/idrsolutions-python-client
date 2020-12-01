@@ -31,6 +31,7 @@ class IDRCloudClient:
 
     JPEDAL = "jpedal"
     BUILDVU = "buildvu"
+    FORMVU = "formvu"
     DOWNLOAD = "download"
     UPLOAD = "upload"
 
