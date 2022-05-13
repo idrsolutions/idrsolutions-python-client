@@ -44,7 +44,7 @@ class IDRCloudClient:
                 timeout_length (int, int): (Optional) A tuple of ints representing the request and
                     response timeouts in seconds respectively
                 conversion_timeout (int): (Optional) The maximum length of time (in seconds) to
-                    wait for the file to convert before aborting
+                    wait for the file to convert before aborting. If value <= 0 then the wait is infinite.
         """
         self.endpoint = url
         self.request_timeout = timeout_length
