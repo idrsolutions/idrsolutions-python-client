@@ -6,10 +6,13 @@ The IDRsolutions Microservice Examples are open source projects that allows you 
 convert PDFs using various softwares from [IDRSolutions](https://www.idrsolutions.com/) as an online service.
 
 JPedal Microservice Example - Convert pages to images
+
 BuildVu Microservice Example - Convert PDFs to HTML or SVG
 
+FormVu Microservice Example - Convert PDF Forms to HTML
+
 IDR Solutions offer a free trial service for running these libraries with Python. You can
-find information at the following links for [JPedal](https://www.idrsolutions.com/jpedal/) and [BuildVu](https://www.idrsolutions.com/buildvu/).
+find information at the following links for [JPedal](https://www.idrsolutions.com/jpedal/), [BuildVu](https://www.idrsolutions.com/buildvu/) and [FormVu](https://www.idrsolutions.com/formvu/).
 
 -----
 
@@ -32,6 +35,10 @@ Full usage for connecting to [BuildVu can be found here](https://support.idrsolu
 
 Full usage for connecting to [JPedal can be found here](https://support.idrsolutions.com/jpedal/tutorials/cloud/).
 
+## FormVu #
+
+Full usage for connecting to [FormVu can be found here](https://support.idrsolutions.com/formvu/tutorials/cloud/).
+
 -----
 
 # Who do I talk to? #
@@ -50,7 +57,7 @@ Longer version: Everyone interacting in the BuildVu Python Client project's code
 
 -----
 
-Copyright 2018 IDRsolutions
+Copyright 2022 IDRsolutions
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
