@@ -1,5 +1,5 @@
 """
-Copyright 2021 IDRsolutions
+Copyright 2022 IDRsolutions
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ class IDRCloudClient:
     DOWNLOAD = "download"
     UPLOAD = "upload"
 
-    def __init__(self, url, timeout_length=(60, 30), conversion_timeout=30, auth=None):
+    def __init__(self, url, timeout_length=(60, 30), conversion_timeout=-1, auth=None):
         """
         Constructor, setup the converter details
 
@@ -44,7 +44,7 @@ class IDRCloudClient:
                 timeout_length (int, int): (Optional) A tuple of ints representing the request and
                     response timeouts in seconds respectively
                 conversion_timeout (int): (Optional) The maximum length of time (in seconds) to
-                    wait for the file to convert before aborting
+                    wait for the file to convert before aborting. If value <= 0 then the wait is infinite.
         """
         self.endpoint = url
         self.request_timeout = timeout_length
@@ -96,7 +96,7 @@ class IDRCloudClient:
             if params.get('callbackUrl') is not None:
                 break
 
-            if count > self.convert_timeout:
+            if 0 < self.convert_timeout < count:
                 raise Exception('Failed: File took longer than ' + str(self.convert_timeout) + ' seconds to convert')
 
             count += 1
