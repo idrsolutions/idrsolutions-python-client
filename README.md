@@ -29,7 +29,7 @@ For other methods / ways to install, check out the [Python Docs](https://packagi
 
 ## BuildVu #
 
-Full usage for connecting to [BuildVu can be found here](https://support.idrsolutions.co](https://www.idrsolutions.com/docs/buildvu/tutorials/cloud/).
+Full usage for connecting to [BuildVu can be found here](https://www.idrsolutions.com/docs/buildvu/tutorials/cloud/).
 
 ## JPedal #
 
