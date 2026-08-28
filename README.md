@@ -29,15 +29,15 @@ For other methods / ways to install, check out the [Python Docs](https://packagi
 
 ## BuildVu #
 
-Full usage for connecting to [BuildVu can be found here](https://www.idrsolutions.com/docs/buildvu/tutorials/cloud/).
+Full usage for connecting to [BuildVu can be found here](https://www.idrsolutions.com/docs/buildvu/host-a-web-service/).
 
 ## JPedal #
 
-Full usage for connecting to [JPedal can be found here](https://www.idrsolutions.com/docs/jpedal/tutorials/cloud/).
+Full usage for connecting to [JPedal can be found here](https://www.idrsolutions.com/docs/jpedal/host-a-web-service/).
 
 ## FormVu #
 
-Full usage for connecting to [FormVu can be found here](https://www.idrsolutions.com/docs/formvu/tutorials/cloud/).
+Full usage for connecting to [FormVu can be found here](https://www.idrsolutions.com/docs/formvu/host-a-web-service/).
 
 -----
 
